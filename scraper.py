@@ -2,6 +2,7 @@ import re
 from bs4 import BeautifulSoup
 from requests import get
 from json import dump
+from time import sleep
 
 from pprint import pprint
 
@@ -25,7 +26,7 @@ for brand in brand_ul.select('li'):
     }
 
 # zbieranie linkow do konkretnych modeli; zapisywane w phones[marka][models]
-for brand in phones.keys():
+for brand in list(phones.keys())[:3]:
     print('Zbieranie informacji o modelach telefonów marki {}...'.format(brand))
 
     # pobieranie calej strony marki
@@ -42,17 +43,16 @@ for brand in phones.keys():
                 'link': SITE_URL + phone_a.attrs['href']
             }
 
-
 # zbieranie danych o konkretnych modelach
 for brand in phones.keys():
     for model in phones[brand]['models']:
         print('Zbieranie informacji o telefonie {} {}...'.format(brand, model))
-
+        sleep(0.5)
         model_site = get(phones[brand]['models'][model]['link']).text
         model_site_soup = BeautifulSoup(model_site, 'html.parser')
 
         searched_spec = ['Standard GSM', 'Waga', 'Standardowa bateria', 'Wyświetlacz', 'Ochrona wyświetlacza',
-                         'Pamięć wbudowana', 'Pamięć RAM', 'System operacyjny', 'Procesor']
+                         'Pamięć wbudowana', 'Pamięć RAM', 'System operacyjny', 'Procesor', 'Wprowadzony na rynek']
         for spec in searched_spec:
             try:
                 phones[brand]['models'][model][spec] = model_site_soup.find('div', text=re.compile(spec))\
