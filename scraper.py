@@ -26,7 +26,7 @@ for brand in brand_ul.select('li'):
     }
 
 # zbieranie linkow do konkretnych modeli; zapisywane w phones[marka][models]
-for brand in list(phones.keys())[:3]:
+for brand in phones.keys():
     print('Zbieranie informacji o modelach telefonów marki {}...'.format(brand))
 
     # pobieranie calej strony marki
@@ -60,9 +60,33 @@ for brand in phones.keys():
             except AttributeError:
                 phones[brand]['models'][model][spec] = ''
 
+# usuwanie 'PL' z modeli
+to_remove = []
+for brand in phones.keys():
+    for model in phones[brand]['models']:
+        if model == 'PL':
+            to_remove.append((brand, model))
+
+for brand, model in to_remove:
+    del phones[brand]['models'][model]
+
+pprint(phones)
+
+# oczyszczanie inforacji o baterii z 'Kup Power Bank'
+for brand in phones.keys():
+    for model in phones[brand]['models']:
+        batery_info = phones[brand]['models'][model]['Standardowa bateria']
+        phones[brand]['models'][model]['Standardowa bateria'] = batery_info.split('\\')[0]  # TODO nie rozdziela poprawnie
+
+# zliczanie o ile telefonach pobrano dane
+phones_count = 0
+for brand in phones.keys():
+    for model in phones[brand]['models']:
+        phones_count += 1
+print('Zebrano dane o {} telefonach'.format(phones_count))
 
 # zapisywanie informacji o telefonach do pliku
-dump(phones, open("phones.txt", 'w'))
+dump(phones, open('data/phones.json', 'w'))
 
 
 
