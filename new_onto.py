@@ -127,4 +127,4 @@ class HaveQuickCharge(FunctionalProperty):
 # print(my_phone)
 
 
-onto.save()
+# onto.save()

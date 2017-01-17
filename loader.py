@@ -1,4 +1,6 @@
 import json
+from owlready import *
+import os
 import new_onto as onto
 from pprint import pprint
 
@@ -31,6 +33,7 @@ from pprint import pprint
 
 # for phone in phones:
 #     print(phone)
+
 
 attributes = ['Standard GSM', 'Waga', 'Standardowa bateria', 'Wyświetlacz', 'Ochrona wyświetlacza', 'Pamięć wbudowana',
               'Pamięć RAM', 'System operacyjny', 'Procesor', 'Wprowadzony na rynek', 'Szybkie ładowanie',
@@ -88,4 +91,4 @@ for brand in data.keys():
         print(data[brand]['models'][model]['Higrometr'])
 
 
-
+onto.onto.save()
