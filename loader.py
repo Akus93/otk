@@ -1,4 +1,5 @@
 import json
+import new_onto as onto
 from pprint import pprint
 
 #
@@ -40,21 +41,38 @@ attributes = ['Standard GSM', 'Waga', 'Standardowa bateria', 'Wyświetlacz', 'Oc
 with open('data/phones.json') as data_file:
     data = json.load(data_file)
 
+phone = onto.Smartphone("phone")
+
 for brand in data.keys():
     print(brand)
+    onto_brand = onto.Brand(brand)
+    phone.HaveBrand.append(onto_brand)
     for model in data[brand]['models']:
         print(model)
+        onto_model = onto.Model(model)
+        onto_brand.HaveModel.append(onto_model)
         print(data[brand]['models'][model]['Standard GSM'])
+        onto_model.HaveGSMStandard = data[brand]['models'][model]['Standard GSM']
         print(data[brand]['models'][model]['Waga'])
+        onto_model.HaveWeight = data[brand]['models'][model]['Waga']
         print(data[brand]['models'][model]['Standardowa bateria'])
+        onto_model.HaveBattery = data[brand]['models'][model]['Standardowa bateria']
         print(data[brand]['models'][model]['Wyświetlacz'])
+        onto_model.HaveScreen = data[brand]['models'][model]['Wyświetlacz']
         print(data[brand]['models'][model]['Ochrona wyświetlacza'])
+        onto_model.HaveScreenProtection = data[brand]['models'][model]['Ochrona wyświetlacza']
         print(data[brand]['models'][model]['Pamięć wbudowana'])
+        onto_model.HaveMemory = data[brand]['models'][model]['Pamięć wbudowana']
         print(data[brand]['models'][model]['Pamięć RAM'])
+        onto_model.HaveRAM = data[brand]['models'][model]['Pamięć RAM']
         print(data[brand]['models'][model]['System operacyjny'])
+        onto_model.HaveOperatingSystem = data[brand]['models'][model]['System operacyjny']
         print(data[brand]['models'][model]['Procesor'])
+        onto_model.HaveProcessor = data[brand]['models'][model]['Procesor']
         print(data[brand]['models'][model]['Wprowadzony na rynek'])
+        onto_model.HaveYearOfIntro = data[brand]['models'][model]['Wprowadzony na rynek']
         print(data[brand]['models'][model]['Szybkie ładowanie'])
+        onto_model.HaveQuickCharge = data[brand]['models'][model]['Szybkie ładowanie']
         print(data[brand]['models'][model]['Ekran dotykowy'])
         print(data[brand]['models'][model]['Akcelerometr'])
         print(data[brand]['models'][model]['Zbliżeniowy'])

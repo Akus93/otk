@@ -96,35 +96,35 @@ class HaveQuickCharge(FunctionalProperty):
     range = [bool]
 
 
-my_phone = Smartphone("my_phone")
-nokia = Brand("Nokia")
-lumia6 = Model("Lumia_600")
-lumia7 = Model("Lumia_700")
-# gsm = GSMStandard("600/900")
-# weight = Weight("600 g")
-# battery = Battery("2000 mAh")
-
-my_phone.HaveBrand.append(nokia)
-nokia.HaveModel.append(lumia6)
-nokia.HaveModel.append(lumia7)
-# lumia6.HaveGSMStandard.append(gsm)
-# lumia6.HaveWeight.append(weight)
-# lumia6.HaveBattery.append(battery)
-# lumia7.HaveGSMStandard.append(gsm)
-# lumia7.HaveWeight.append(weight)
-# lumia7.HaveBattery.append(battery)
-
-lumia6.HaveGSMStandard = "600/900"
-lumia6.HaveWeight = "1000"
-lumia6.HaveBattery = "5000"
-lumia7.HaveGSMStandard = "600/900"
-lumia7.HaveWeight = "600"
-lumia7.HaveBattery = "2000"
-
-print(my_phone.HaveBrand)
-print(nokia.HaveModel)
-print(lumia7.HaveBattery)
-print(my_phone)
+# my_phone = Smartphone("my_phone")
+# nokia = Brand("Nokia")
+# lumia6 = Model("Lumia_600")
+# lumia7 = Model("Lumia_700")
+# # gsm = GSMStandard("600/900")
+# # weight = Weight("600 g")
+# # battery = Battery("2000 mAh")
+#
+# my_phone.HaveBrand.append(nokia)
+# nokia.HaveModel.append(lumia6)
+# nokia.HaveModel.append(lumia7)
+# # lumia6.HaveGSMStandard.append(gsm)
+# # lumia6.HaveWeight.append(weight)
+# # lumia6.HaveBattery.append(battery)
+# # lumia7.HaveGSMStandard.append(gsm)
+# # lumia7.HaveWeight.append(weight)
+# # lumia7.HaveBattery.append(battery)
+#
+# lumia6.HaveGSMStandard = "600/900"
+# lumia6.HaveWeight = "1000"
+# lumia6.HaveBattery = "5000"
+# lumia7.HaveGSMStandard = "600/900"
+# lumia7.HaveWeight = "600"
+# lumia7.HaveBattery = "2000"
+#
+# print(my_phone.HaveBrand)
+# print(nokia.HaveModel)
+# print(lumia7.HaveBattery)
+# print(my_phone)
 
 
 onto.save()
