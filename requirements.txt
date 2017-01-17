@@ -1,2 +1,4 @@
+owlready
+rdflib
 beautifulsoup4==4.5.1
 requests==2.12.3

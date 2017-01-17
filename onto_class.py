@@ -1,7 +1,10 @@
 from owlready import *
+import os
 
-onto = Ontology("new_onto.owl")
-onto_path.append("/home/ania/PycharmProjects/otk/otk_pl/otk_pl")
+path = '/'.join(os.path.realpath(__file__).split('/')[:-1]) + '/data'
+
+onto = Ontology("newest_onto.owl")
+onto_path.append(path)
 
 
 class Smartphone(Thing):
@@ -138,13 +141,13 @@ class HaveQuickCharge(Property):
     range = [QuickCharge]
 
 
-my_phone = Smartphone("my phone")
+my_phone = Smartphone("my_phone")
 nokia = Brand("Nokia")
-lumia6 = Model("Lumia 600")
-lumia7 = Model("Lumia 700")
+lumia6 = Model("Lumia_600")
+lumia7 = Model("Lumia_700")
 gsm = GSMStandard("600/900")
-weight = Weight("600 g")
-battery = Battery("2000 mAh")
+weight = Weight("600")
+battery = Battery("2000")
 
 my_phone.HaveBrand.append(nokia)
 nokia.HaveModel.append(lumia6)

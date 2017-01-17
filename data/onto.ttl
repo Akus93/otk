@@ -1,0 +1,193 @@
+@prefix : <onto.owl> .
+@prefix a: <http://www.example.com/ontology1#> .
+@prefix s: <http://www.exampless.com/ontology1#> .
+@prefix u: <http://amw-project.azarasoft.com/AWM.txt#> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix d0: <http://www.ontologydesignpatterns.org/ont/d0.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.com/ns#> .
+@prefix ns: <http://isd.ktu.lt/semantika/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wn: <http://www.w3.org/2006/03/wn/wn20/instances/> .
+@prefix Equ: <http://www.IndustrialUnit.com/ontologies/Equipment.owl> .
+@prefix cbx: <http://cybox.mitre.org/cybox_v1#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix mfg: <http://www.workingontologist.org/Examples/Chapter3/Product.owl#> .
+@prefix ns0: <http://ontology.tno.nl/logico#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix orm: <http://schemas.neumont.edu/ORM/2006-04/ORMCore> .
+@prefix osn: <http://spatial.ucd.ie/lod/osn/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rel: <http://www.pace.edu/rel-syntax-ns#> .
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix sdl: <http://sdl.uniroma1.it/ontologies/sapienzadigitalresources.owl#> .
+@prefix wns: <http://www.w3.org/2006/03/wn/wn20/schema/> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix atom: <http://www.w3.org/2005/Atom> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix onto: <onto.owl> .
+@prefix osnp: <http://spatial.ucd.ie/lod/osn/property/> .
+@prefix osnt: <http://spatial.ucd.ie/lod/osn/term/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix media: <http://search.yahoo.com/mrss/> .
+@prefix ormdt: <http://schemas.orm.net/ORMDataTypes> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix soal3: <http://www.semanticweb.org/fariss/ontologies/2016/11/soal3#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix LogiCO: <http://ontology.tno.nl/logico#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ormRoot: <http://schemas.neumont.edu/ORM/2006-04/ORMRoot> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix spcdata: <http://spcdata.digitpa.gov.it/> .
+@prefix cidoccrm: <http://purl.org/NET/cidoc-crm/core#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix ontology: <http://www.rki.de/demis/ontology/> .
+@prefix wgs84pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix structure: <http://rechenknecht.dyndns.info:6666/HCML/structure#> .
+@base <onto.owl> .
+
+<onto.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  onto.owlonto.owl#HasBrandName
+
+<onto.owlonto.owl#HasBrandName> rdf:type owl:ObjectProperty ;
+
+                                rdfs:range <onto.owlonto.owl#Brand> ;
+
+                                rdfs:domain <onto.owlonto.owl#Smartphone> .
+
+
+
+###  onto.owlonto.owl#HasModel
+
+<onto.owlonto.owl#HasModel> rdf:type owl:ObjectProperty ;
+
+                            rdfs:domain <onto.owlonto.owl#Brand> ;
+
+                            rdfs:subPropertyOf <onto.owlonto.owl#HasBrandName> ;
+
+                            rdfs:range <onto.owlonto.owl#Model> .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  onto.owlonto.owl#Brand
+
+<onto.owlonto.owl#Brand> rdf:type owl:Class ;
+
+                         rdfs:subClassOf <onto.owlonto.owl#Smartphone> .
+
+
+
+###  onto.owlonto.owl#Model
+
+<onto.owlonto.owl#Model> rdf:type owl:Class ;
+
+                         rdfs:subClassOf <onto.owlonto.owl#Brand> .
+
+
+
+###  onto.owlonto.owl#Smartphone
+
+<onto.owlonto.owl#Smartphone> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  onto.owlonto.owl#Lumia
+
+<onto.owlonto.owl#Lumia> rdf:type owl:NamedIndividual ,
+                                  <onto.owlonto.owl#Model> .
+
+
+
+###  onto.owlonto.owl#Nokia
+
+<onto.owlonto.owl#Nokia> rdf:type owl:NamedIndividual ,
+                                  <onto.owlonto.owl#Brand> ;
+
+                         <onto.owlonto.owl#HasModel> <onto.owlonto.owl#S6> .
+
+
+
+###  onto.owlonto.owl#S6
+
+<onto.owlonto.owl#S6> rdf:type owl:NamedIndividual ,
+                               <onto.owlonto.owl#Model> .
+
+
+
+###  onto.owlonto.owl#Samsung
+
+<onto.owlonto.owl#Samsung> rdf:type owl:NamedIndividual ,
+                                    <onto.owlonto.owl#Brand> ;
+
+                           <onto.owlonto.owl#HasModel> <onto.owlonto.owl#S6> .
+
+
+
+###  onto.owlonto.owl#my_phone
+
+<onto.owlonto.owl#my_phone> rdf:type owl:NamedIndividual ,
+                                     <onto.owlonto.owl#Smartphone> ;
+
+                            <onto.owlonto.owl#HasBrandName> <onto.owlonto.owl#Samsung> .
+
+
+
+###  onto.owlonto.owl#my_phone1
+
+<onto.owlonto.owl#my_phone1> rdf:type owl:NamedIndividual ,
+                                      <onto.owlonto.owl#Smartphone> ;
+
+                             <onto.owlonto.owl#HasBrandName> <onto.owlonto.owl#Nokia> .
+
+
+
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net

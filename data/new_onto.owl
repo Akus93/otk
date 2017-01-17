@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+]>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="new_onto.owl" ontologyIRI="new_onto.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+>
+<Prefix name="" IRI="new_onto.owl"/>
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+<Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+<Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+<Prefix name="new_onto" IRI="new_onto.owl"/>
+
+<Declaration><ObjectProperty IRI="new_onto.owl#HaveBrand"/></Declaration>
+<Declaration><ObjectProperty IRI="new_onto.owl#HaveModel"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveGSMStandard"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveWeight"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveBattery"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveScreen"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveScreenProtection"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveMemory"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveRAM"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveOperatingSystem"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveProcessor"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveYearOfIntro"/></Declaration>
+<Declaration><DataProperty IRI="new_onto.owl#HaveQuickCharge"/></Declaration>
+<Declaration><Class IRI="new_onto.owl#Smartphone"/></Declaration>
+<Declaration><Class IRI="new_onto.owl#Brand"/></Declaration>
+<Declaration><Class IRI="new_onto.owl#Model"/></Declaration>
+<Declaration><NamedIndividual IRI="new_onto.owl#my_phone"/></Declaration>
+<Declaration><NamedIndividual IRI="new_onto.owl#Nokia"/></Declaration>
+<Declaration><NamedIndividual IRI="new_onto.owl#Lumia_600"/></Declaration>
+<Declaration><NamedIndividual IRI="new_onto.owl#Lumia_700"/></Declaration>
+
+<ObjectPropertyDomain><ObjectProperty IRI="new_onto.owl#HaveBrand"/><Class IRI="new_onto.owl#Smartphone"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="new_onto.owl#HaveBrand"/><Class IRI="new_onto.owl#Brand"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="new_onto.owl#HaveModel"/><Class IRI="new_onto.owl#Brand"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="new_onto.owl#HaveModel"/><Class IRI="new_onto.owl#Model"/></ObjectPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveGSMStandard"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveGSMStandard"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveGSMStandard"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveWeight"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveWeight"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveWeight"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveBattery"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveBattery"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveBattery"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveScreen"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveScreen"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveScreen"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveScreenProtection"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveScreenProtection"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveScreenProtection"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveMemory"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveMemory"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveMemory"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveRAM"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveRAM"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveRAM"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveOperatingSystem"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveOperatingSystem"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveOperatingSystem"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveProcessor"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveProcessor"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveProcessor"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveYearOfIntro"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveYearOfIntro"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveYearOfIntro"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+<FunctionalDataProperty><DataProperty IRI="new_onto.owl#HaveQuickCharge"/></FunctionalDataProperty>
+<DataPropertyDomain><DataProperty IRI="new_onto.owl#HaveQuickCharge"/><Class IRI="new_onto.owl#Model"/></DataPropertyDomain>
+<DataPropertyRange><DataProperty IRI="new_onto.owl#HaveQuickCharge"/><Datatype IRI="http://www.w3.org/2001/XMLSchema#string"/></DataPropertyRange>
+
+
+
+
+<ClassAssertion><Class IRI="new_onto.owl#Smartphone"/><NamedIndividual IRI="new_onto.owl#my_phone"/></ClassAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="new_onto.owl#HaveBrand"/><NamedIndividual IRI="new_onto.owl#my_phone"/><NamedIndividual IRI="new_onto.owl#Nokia"/></ObjectPropertyAssertion>
+
+<ClassAssertion><Class IRI="new_onto.owl#Brand"/><NamedIndividual IRI="new_onto.owl#Nokia"/></ClassAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="new_onto.owl#HaveModel"/><NamedIndividual IRI="new_onto.owl#Nokia"/><NamedIndividual IRI="new_onto.owl#Lumia_600"/></ObjectPropertyAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="new_onto.owl#HaveModel"/><NamedIndividual IRI="new_onto.owl#Nokia"/><NamedIndividual IRI="new_onto.owl#Lumia_700"/></ObjectPropertyAssertion>
+
+<ClassAssertion><Class IRI="new_onto.owl#Model"/><NamedIndividual IRI="new_onto.owl#Lumia_600"/></ClassAssertion>
+<DataPropertyAssertion><DataProperty IRI="new_onto.owl#HaveGSMStandard"/><NamedIndividual IRI="new_onto.owl#Lumia_600"/><Literal datatypeIRI="&xsd;string">600/900</Literal></DataPropertyAssertion>
+<DataPropertyAssertion><DataProperty IRI="new_onto.owl#HaveWeight"/><NamedIndividual IRI="new_onto.owl#Lumia_600"/><Literal datatypeIRI="&xsd;string">1000</Literal></DataPropertyAssertion>
+<DataPropertyAssertion><DataProperty IRI="new_onto.owl#HaveBattery"/><NamedIndividual IRI="new_onto.owl#Lumia_600"/><Literal datatypeIRI="&xsd;string">5000</Literal></DataPropertyAssertion>
+
+<ClassAssertion><Class IRI="new_onto.owl#Model"/><NamedIndividual IRI="new_onto.owl#Lumia_700"/></ClassAssertion>
+<DataPropertyAssertion><DataProperty IRI="new_onto.owl#HaveGSMStandard"/><NamedIndividual IRI="new_onto.owl#Lumia_700"/><Literal datatypeIRI="&xsd;string">600/900</Literal></DataPropertyAssertion>
+<DataPropertyAssertion><DataProperty IRI="new_onto.owl#HaveWeight"/><NamedIndividual IRI="new_onto.owl#Lumia_700"/><Literal datatypeIRI="&xsd;string">600</Literal></DataPropertyAssertion>
+<DataPropertyAssertion><DataProperty IRI="new_onto.owl#HaveBattery"/><NamedIndividual IRI="new_onto.owl#Lumia_700"/><Literal datatypeIRI="&xsd;string">2000</Literal></DataPropertyAssertion>
+
+</Ontology>

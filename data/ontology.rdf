@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="new_onto.owl"
+     xml:base="new_onto.owl"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:ns="http://isd.ktu.lt/semantika/"
+     xmlns:sct="http://snomed.info/id/"
+     xmlns:Equ="http://www.IndustrialUnit.com/ontologies/Equipment.owl"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:cidoccrm="http://purl.org/NET/cidoc-crm/core#"
+     xmlns:schema="http://schema.org/"
+     xmlns:d0="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:osnt="http://spatial.ucd.ie/lod/osn/term/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdl="http://sdl.uniroma1.it/ontologies/sapienzadigitalresources.owl#"
+     xmlns:osnp="http://spatial.ucd.ie/lod/osn/property/"
+     xmlns:soal3="http://www.semanticweb.org/fariss/ontologies/2016/11/soal3#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:onto="onto.owl"
+     xmlns:structure="http://rechenknecht.dyndns.info:6666/HCML/structure#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:wn="http://www.w3.org/2006/03/wn/wn20/instances/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:sh="http://www.w3.org/ns/shacl#"
+     xmlns:ontology="http://www.rki.de/demis/ontology/"
+     xmlns:rov="http://www.w3.org/ns/regorg#"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:pizza="http://www.co-ode.org/ontologies/pizza/pizza.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ormRoot="http://schemas.neumont.edu/ORM/2006-04/ORMRoot"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:wns="http://www.w3.org/2006/03/wn/wn20/schema/"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:osn="http://spatial.ucd.ie/lod/osn/"
+     xmlns:res="http://www.w3.org/2005/sparql-results#"
+     xmlns:orm="http://schemas.neumont.edu/ORM/2006-04/ORMCore"
+     xmlns:wikidata="http://www.wikidata.org/entity/"
+     xmlns:spcdata="http://spcdata.digitpa.gov.it/"
+     xmlns:ormdt="http://schemas.orm.net/ORMDataTypes"
+     xmlns:new_onto2="new_onto.owlnew_onto.owl#"
+     xmlns:fhir="http://hl7.org/fhir/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:geonames="http://www.geonames.org/ontology#"
+     xmlns:newest_onto="newest_onto.owl"
+     xmlns:new_onto="new_onto.owl"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:LogiCO="http://ontology.tno.nl/logico#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:mfg="http://www.workingontologist.org/Examples/Chapter3/Product.owl#"
+     xmlns:ex="http://example.com/ns#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:a="http://www.example.com/ontology1#"
+     xmlns:locn="http://www.w3.org/ns/locn#"
+     xmlns:cbx="http://cybox.mitre.org/cybox_v1#"
+     xmlns:u="http://amw-project.azarasoft.com/AWM.txt#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/"
+     xmlns:s="http://www.exampless.com/ontology1#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:aiiso="http://purl.org/vocab/aiiso/schema#"
+     xmlns:rel="http://www.pace.edu/rel-syntax-ns#"
+     xmlns:wgs84pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="new_onto.owl"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveBrand -->
+
+    <owl:ObjectProperty rdf:about="new_onto.owlnew_onto.owl#HaveBrand">
+        <rdfs:range rdf:resource="new_onto.owlnew_onto.owl#Brand"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Smartphone"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveModel -->
+
+    <owl:ObjectProperty rdf:about="new_onto.owlnew_onto.owl#HaveModel">
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Brand"/>
+        <rdfs:range rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveBattery -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveBattery">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveGSMStandard -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveGSMStandard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveMemory -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveMemory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveOperatingSystem -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveOperatingSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveProcessor -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveProcessor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveQuickCharge -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveQuickCharge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveRAM -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveRAM">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveScreen -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveScreen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveScreenProtection -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveScreenProtection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveWeight -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveWeight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#HaveYearOfIntro -->
+
+    <owl:DatatypeProperty rdf:about="new_onto.owlnew_onto.owl#HaveYearOfIntro">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- new_onto.owlnew_onto.owl#Brand -->
+
+    <owl:Class rdf:about="new_onto.owlnew_onto.owl#Brand"/>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#Model -->
+
+    <owl:Class rdf:about="new_onto.owlnew_onto.owl#Model"/>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#Smartphone -->
+
+    <owl:Class rdf:about="new_onto.owlnew_onto.owl#Smartphone"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- new_onto.owlnew_onto.owl#Lumia_600 -->
+
+    <owl:NamedIndividual rdf:about="new_onto.owlnew_onto.owl#Lumia_600">
+        <rdf:type rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+        <new_onto2:HaveWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</new_onto2:HaveWeight>
+        <new_onto2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5000</new_onto2:HaveBattery>
+        <new_onto2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600/900</new_onto2:HaveGSMStandard>
+    </owl:NamedIndividual>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#Lumia_700 -->
+
+    <owl:NamedIndividual rdf:about="new_onto.owlnew_onto.owl#Lumia_700">
+        <rdf:type rdf:resource="new_onto.owlnew_onto.owl#Model"/>
+        <new_onto2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000</new_onto2:HaveBattery>
+        <new_onto2:HaveWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600</new_onto2:HaveWeight>
+        <new_onto2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600/900</new_onto2:HaveGSMStandard>
+    </owl:NamedIndividual>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#Nokia -->
+
+    <owl:NamedIndividual rdf:about="new_onto.owlnew_onto.owl#Nokia">
+        <rdf:type rdf:resource="new_onto.owlnew_onto.owl#Brand"/>
+        <new_onto2:HaveModel rdf:resource="new_onto.owlnew_onto.owl#Lumia_600"/>
+        <new_onto2:HaveModel rdf:resource="new_onto.owlnew_onto.owl#Lumia_700"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- new_onto.owlnew_onto.owl#my_phone -->
+
+    <owl:NamedIndividual rdf:about="new_onto.owlnew_onto.owl#my_phone">
+        <rdf:type rdf:resource="new_onto.owlnew_onto.owl#Smartphone"/>
+        <new_onto2:HaveBrand rdf:resource="new_onto.owlnew_onto.owl#Nokia"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net -->

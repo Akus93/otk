@@ -1,7 +1,9 @@
 from owlready import *
+import os
 
+path = '/'.join(os.path.realpath(__file__).split('/')[:-1]) + '/data'
 onto = Ontology("new_onto.owl")
-onto_path.append("/home/ania/PycharmProjects/otk/otk_pl/otk_pl")
+onto_path.append(path)
 
 
 class Smartphone(Thing):
@@ -94,10 +96,10 @@ class HaveQuickCharge(FunctionalProperty):
     range = [bool]
 
 
-my_phone = Smartphone("my phone")
+my_phone = Smartphone("my_phone")
 nokia = Brand("Nokia")
-lumia6 = Model("Lumia 600")
-lumia7 = Model("Lumia 700")
+lumia6 = Model("Lumia_600")
+lumia7 = Model("Lumia_700")
 # gsm = GSMStandard("600/900")
 # weight = Weight("600 g")
 # battery = Battery("2000 mAh")
@@ -113,11 +115,11 @@ nokia.HaveModel.append(lumia7)
 # lumia7.HaveBattery.append(battery)
 
 lumia6.HaveGSMStandard = "600/900"
-lumia6.HaveWeight = "600"
-lumia6.HaveBattery = "2000 mAh"
+lumia6.HaveWeight = "1000"
+lumia6.HaveBattery = "5000"
 lumia7.HaveGSMStandard = "600/900"
-lumia7.HaveWeight = "600 g"
-lumia7.HaveBattery = "2000 mAh"
+lumia7.HaveWeight = "600"
+lumia7.HaveBattery = "2000"
 
 print(my_phone.HaveBrand)
 print(nokia.HaveModel)

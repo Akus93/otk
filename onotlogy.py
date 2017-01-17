@@ -2,7 +2,7 @@ from owlready import *
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 onto = Ontology("onto.owl")
-onto_path.append("/home/ania/PycharmProjects/otk/otk_pl/otk_pl")
+onto_path.append("/home/akus/Projekty/zti/otk/data")
 
 
 class Smartphone(Thing):
@@ -46,16 +46,14 @@ print(onto.properties)
 onto.save()
 print(to_owl(onto))
 
-
-
-sparql = SPARQLWrapper("onto.owl")
-sparql.setQuery("""
-    PREFIX rdfs: onto.owl
-    SELECT *
-    WHERE { ?Brand rdfs:Smartphone ?Smartphone }
-""")
-sparql.setReturnFormat(JSON)
-results = sparql.query().convert()
-
-for result in results["results"]["bindings"]:
-    print(result["label"]["value"])
+# sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+# sparql.setQuery("""
+#     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+#     SELECT ?label
+#     WHERE { <http://dbpedia.org/resource/Asturias> rdfs:label ?label }
+# """)
+# sparql.setReturnFormat(JSON)
+# results = sparql.query().convert()
+#
+# for result in results["results"]["bindings"]:
+#     print(result["label"]["value"])

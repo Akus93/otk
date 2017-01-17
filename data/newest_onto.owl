@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+]>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xml:base="newest_onto.owl" ontologyIRI="newest_onto.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+>
+<Prefix name="" IRI="newest_onto.owl"/>
+<Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+<Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+<Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+<Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+<Prefix name="newest_onto" IRI="newest_onto.owl"/>
+
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveBrand"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveModel"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveGSMStandard"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveWeight"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveBattery"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveScreen"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveScreenProtection"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveMemory"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveRAM"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveOperatingSystem"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveProcessor"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveYearOfIntro"/></Declaration>
+<Declaration><ObjectProperty IRI="newest_onto.owl#HaveQuickCharge"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Smartphone"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Brand"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Model"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#GSMStandard"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Weight"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Battery"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Screen"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#ScreenProtection"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Memory"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#RAM"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#OperatingSystem"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#Processor"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#YearOfIntro"/></Declaration>
+<Declaration><Class IRI="newest_onto.owl#QuickCharge"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#my_phone"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#Nokia"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#Lumia_600"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#Lumia_700"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#600/900"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#600"/></Declaration>
+<Declaration><NamedIndividual IRI="newest_onto.owl#2000"/></Declaration>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveBrand"/><Class IRI="newest_onto.owl#Smartphone"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveBrand"/><Class IRI="newest_onto.owl#Brand"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveModel"/><Class IRI="newest_onto.owl#Brand"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveModel"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveGSMStandard"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveGSMStandard"/><Class IRI="newest_onto.owl#GSMStandard"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveWeight"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveWeight"/><Class IRI="newest_onto.owl#Weight"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveBattery"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveBattery"/><Class IRI="newest_onto.owl#Battery"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveScreen"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveScreen"/><Class IRI="newest_onto.owl#Screen"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveScreenProtection"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveScreenProtection"/><Class IRI="newest_onto.owl#ScreenProtection"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveMemory"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveMemory"/><Class IRI="newest_onto.owl#Memory"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveRAM"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveRAM"/><Class IRI="newest_onto.owl#RAM"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveOperatingSystem"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveOperatingSystem"/><Class IRI="newest_onto.owl#OperatingSystem"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveProcessor"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveProcessor"/><Class IRI="newest_onto.owl#Processor"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveYearOfIntro"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveYearOfIntro"/><Class IRI="newest_onto.owl#YearOfIntro"/></ObjectPropertyRange>
+
+<ObjectPropertyDomain><ObjectProperty IRI="newest_onto.owl#HaveQuickCharge"/><Class IRI="newest_onto.owl#Model"/></ObjectPropertyDomain>
+<ObjectPropertyRange><ObjectProperty IRI="newest_onto.owl#HaveQuickCharge"/><Class IRI="newest_onto.owl#QuickCharge"/></ObjectPropertyRange>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ClassAssertion><Class IRI="newest_onto.owl#Smartphone"/><NamedIndividual IRI="newest_onto.owl#my_phone"/></ClassAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveBrand"/><NamedIndividual IRI="newest_onto.owl#my_phone"/><NamedIndividual IRI="newest_onto.owl#Nokia"/></ObjectPropertyAssertion>
+
+<ClassAssertion><Class IRI="newest_onto.owl#Brand"/><NamedIndividual IRI="newest_onto.owl#Nokia"/></ClassAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveModel"/><NamedIndividual IRI="newest_onto.owl#Nokia"/><NamedIndividual IRI="newest_onto.owl#Lumia_600"/></ObjectPropertyAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveModel"/><NamedIndividual IRI="newest_onto.owl#Nokia"/><NamedIndividual IRI="newest_onto.owl#Lumia_700"/></ObjectPropertyAssertion>
+
+<ClassAssertion><Class IRI="newest_onto.owl#Model"/><NamedIndividual IRI="newest_onto.owl#Lumia_600"/></ClassAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveBattery"/><NamedIndividual IRI="newest_onto.owl#Lumia_600"/><NamedIndividual IRI="newest_onto.owl#2000"/></ObjectPropertyAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveWeight"/><NamedIndividual IRI="newest_onto.owl#Lumia_600"/><NamedIndividual IRI="newest_onto.owl#600"/></ObjectPropertyAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveGSMStandard"/><NamedIndividual IRI="newest_onto.owl#Lumia_600"/><NamedIndividual IRI="newest_onto.owl#600/900"/></ObjectPropertyAssertion>
+
+<ClassAssertion><Class IRI="newest_onto.owl#Model"/><NamedIndividual IRI="newest_onto.owl#Lumia_700"/></ClassAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveBattery"/><NamedIndividual IRI="newest_onto.owl#Lumia_700"/><NamedIndividual IRI="newest_onto.owl#2000"/></ObjectPropertyAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveWeight"/><NamedIndividual IRI="newest_onto.owl#Lumia_700"/><NamedIndividual IRI="newest_onto.owl#600"/></ObjectPropertyAssertion>
+<ObjectPropertyAssertion><ObjectProperty IRI="newest_onto.owl#HaveGSMStandard"/><NamedIndividual IRI="newest_onto.owl#Lumia_700"/><NamedIndividual IRI="newest_onto.owl#600/900"/></ObjectPropertyAssertion>
+
+<ClassAssertion><Class IRI="newest_onto.owl#GSMStandard"/><NamedIndividual IRI="newest_onto.owl#600/900"/></ClassAssertion>
+
+<ClassAssertion><Class IRI="newest_onto.owl#Weight"/><NamedIndividual IRI="newest_onto.owl#600"/></ClassAssertion>
+
+<ClassAssertion><Class IRI="newest_onto.owl#Battery"/><NamedIndividual IRI="newest_onto.owl#2000"/></ClassAssertion>
+
+</Ontology>
