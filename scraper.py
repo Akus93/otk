@@ -2,6 +2,7 @@ import re
 from bs4 import BeautifulSoup
 from requests import get
 from json import dump
+from time import sleep
 
 from pprint import pprint
 
@@ -54,7 +55,7 @@ for brand in brand_ul.select('li'):
     }
 
 # zbieranie linkow do konkretnych modeli; zapisywane w phones[marka][models]
-for brand in list(phones.keys())[:3]:
+for brand in phones.keys():
     print('Zbieranie informacji o modelach telefonów marki {}...'.format(brand))
 
     # pobieranie calej strony marki
@@ -66,31 +67,23 @@ for brand in list(phones.keys())[:3]:
     for phone_li in phone_list_li:
         phone_a = phone_li.select_one('a')
         # zapisywanie modelu telefonu i linku do niego
-        if not phone_a.attrs['href'] == SITE_URL and not phone_a.text == "PL":
+        if not phone_a.attrs['href'] == SITE_URL:
             phones[brand]['models'][phone_a.text] = {
                 'link': SITE_URL + phone_a.attrs['href']
             }
-
-
-            Smartphone(phone_a.attrs['alt']).HasBrandName.append(Brand(brand))
-            Brand(brand).HasModel.append(Model(phone_a.text))
-
-
-onto.save()
-print(onto.instances)
-
 
 # zbieranie danych o konkretnych modelach
 for brand in list(phones.keys())[:3]:
     for model in phones[brand]['models']:
         print('Zbieranie informacji o telefonie {} {}...'.format(brand, model))
+        sleep(0.5)
         print(phones[brand]['models'][model]['link'])
 
         model_site = get(phones[brand]['models'][model]['link']).text
         model_site_soup = BeautifulSoup(model_site, 'html.parser')
 
         searched_spec = ['Standard GSM', 'Waga', 'Standardowa bateria', 'Wyświetlacz', 'Ochrona wyświetlacza',
-                         'Pamięć wbudowana', 'Pamięć RAM', 'System operacyjny', 'Procesor']
+                         'Pamięć wbudowana', 'Pamięć RAM', 'System operacyjny', 'Procesor', 'Wprowadzony na rynek']
         for spec in searched_spec:
             try:
                 phones[brand]['models'][model][spec] = model_site_soup.find('div', text=re.compile(spec))\
@@ -98,9 +91,33 @@ for brand in list(phones.keys())[:3]:
             except AttributeError:
                 phones[brand]['models'][model][spec] = ''
 
+# usuwanie 'PL' z modeli
+to_remove = []
+for brand in phones.keys():
+    for model in phones[brand]['models']:
+        if model == 'PL':
+            to_remove.append((brand, model))
+
+for brand, model in to_remove:
+    del phones[brand]['models'][model]
+
+pprint(phones)
+
+# oczyszczanie inforacji o baterii z 'Kup Power Bank'
+for brand in phones.keys():
+    for model in phones[brand]['models']:
+        batery_info = phones[brand]['models'][model]['Standardowa bateria']
+        phones[brand]['models'][model]['Standardowa bateria'] = batery_info.split('\\')[0]  # TODO nie rozdziela poprawnie
+
+# zliczanie o ile telefonach pobrano dane
+phones_count = 0
+for brand in phones.keys():
+    for model in phones[brand]['models']:
+        phones_count += 1
+print('Zebrano dane o {} telefonach'.format(phones_count))
 
 # zapisywanie informacji o telefonach do pliku
-dump(phones, open("phones.txt", 'w'))
+dump(phones, open('data/phones.json', 'w'))
 
 
 
