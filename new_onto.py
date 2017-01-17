@@ -169,6 +169,4 @@ print(lumia7.HaveBattery)
 print(my_phone)
 
 
-
-
 onto.save()
