@@ -16,48 +16,48 @@ class Model(Thing):
     ontology = onto
 
 
-class GSMStandard(Thing):
-    ontology = onto
-
-
-class Weight(Thing):
-    ontology = onto
-
-
-class Battery(Thing):
-    ontology = onto
-
-
-class Screen(Thing):
-    ontology = onto
-
-
-class ScreenProtection(Thing):
-    ontology = onto
-
-
-class Memory(Thing):
-    ontology = onto
-
-
-class RAM(Thing):
-    ontology = onto
-
-
-class OperatingSystem(Thing):
-    ontology = onto
-
-
-class Processor(Thing):
-    ontology = onto
-
-
-class YearOfIntro(Thing):
-    ontology = onto
-
-
-class QuickCharge(Thing):
-    ontology = onto
+# class GSMStandard(Thing):
+#     ontology = onto
+#
+#
+# class Weight(Thing):
+#     ontology = onto
+#
+#
+# class Battery(Thing):
+#     ontology = onto
+#
+#
+# class Screen(Thing):
+#     ontology = onto
+#
+#
+# class ScreenProtection(Thing):
+#     ontology = onto
+#
+#
+# class Memory(Thing):
+#     ontology = onto
+#
+#
+# class RAM(Thing):
+#     ontology = onto
+#
+#
+# class OperatingSystem(Thing):
+#     ontology = onto
+#
+#
+# class Processor(Thing):
+#     ontology = onto
+#
+#
+# class YearOfIntro(Thing):
+#     ontology = onto
+#
+#
+# class QuickCharge(Thing):
+#     ontology = onto
 
 
 class HaveBrand(Property):
@@ -72,93 +72,103 @@ class HaveModel(Property):
     range = [Model]
 
 
-class HaveGSMStandard(Property):
+class HaveGSMStandard(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [GSMStandard]
+    range = [str]
 
 
-class HaveWeight(Property):
+class HaveWeight(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [Weight]
+    range = [str]
 
 
-class HaveBattery(Property):
+class HaveBattery(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [Battery]
+    range = [str]
 
 
-class HaveScreen(Property):
+class HaveScreen(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [Screen]
+    range = [str]
 
 
-class HaveScreenProtection(Property):
+class HaveScreenProtection(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [ScreenProtection]
+    range = [str]
 
 
-class HaveMemory(Property):
+class HaveMemory(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [Memory]
+    range = [str]
 
 
-class HaveRAM(Property):
+class HaveRAM(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [RAM]
+    range = [str]
 
 
-class HaveOperatingSystem(Property):
+class HaveOperatingSystem(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [OperatingSystem]
+    range = [str]
 
 
-class HaveProcessor(Property):
+class HaveProcessor(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [Processor]
+    range = [str]
 
 
-class HaveYearOfIntro(Property):
+class HaveYearOfIntro(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [YearOfIntro]
+    range = [str]
 
 
-class HaveQuickCharge(Property):
+class HaveQuickCharge(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [QuickCharge]
+    range = [str]
 
 
 my_phone = Smartphone("my phone")
 nokia = Brand("Nokia")
 lumia6= Model("Lumia 600")
 lumia7 = Model("Lumia 700")
-gsm = GSMStandard("600/900")
-weight = Weight("600 g")
-battery = Battery("2000 mAh")
+# gsm = GSMStandard("600/900")
+# weight = Weight("600 g")
+# battery = Battery("2000 mAh")
 
 my_phone.HaveBrand.append(nokia)
 nokia.HaveModel.append(lumia6)
 nokia.HaveModel.append(lumia7)
-lumia6.HaveGSMStandard.append(gsm)
-lumia6.HaveWeight.append(weight)
-lumia6.HaveBattery.append(battery)
-lumia7.HaveGSMStandard.append(gsm)
-lumia7.HaveWeight.append(weight)
-lumia7.HaveBattery.append(battery)
+# lumia6.HaveGSMStandard.append(gsm)
+# lumia6.HaveWeight.append(weight)
+# lumia6.HaveBattery.append(battery)
+# lumia7.HaveGSMStandard.append(gsm)
+# lumia7.HaveWeight.append(weight)
+# lumia7.HaveBattery.append(battery)
+
+lumia6.HaveGSMStandard = "600/900"
+lumia6.HaveWeight = "600 g"
+lumia6.HaveBattery = "2000 mAh"
+lumia7.HaveGSMStandard = "600/900"
+lumia7.HaveWeight = "600 g"
+lumia7.HaveBattery = "2000 mAh"
 
 print(my_phone.HaveBrand)
 print(nokia.HaveModel)
 print(lumia7.HaveBattery)
+print(my_phone)
+
+
 
 
 onto.save()
