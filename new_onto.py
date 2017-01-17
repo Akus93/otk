@@ -16,50 +16,6 @@ class Model(Thing):
     ontology = onto
 
 
-# class GSMStandard(Thing):
-#     ontology = onto
-#
-#
-# class Weight(Thing):
-#     ontology = onto
-#
-#
-# class Battery(Thing):
-#     ontology = onto
-#
-#
-# class Screen(Thing):
-#     ontology = onto
-#
-#
-# class ScreenProtection(Thing):
-#     ontology = onto
-#
-#
-# class Memory(Thing):
-#     ontology = onto
-#
-#
-# class RAM(Thing):
-#     ontology = onto
-#
-#
-# class OperatingSystem(Thing):
-#     ontology = onto
-#
-#
-# class Processor(Thing):
-#     ontology = onto
-#
-#
-# class YearOfIntro(Thing):
-#     ontology = onto
-#
-#
-# class QuickCharge(Thing):
-#     ontology = onto
-
-
 class HaveBrand(Property):
     ontology = onto
     domain = [Smartphone]
@@ -81,13 +37,13 @@ class HaveGSMStandard(FunctionalProperty):
 class HaveWeight(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [str]
+    range = [float]
 
 
 class HaveBattery(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [str]
+    range = [int]
 
 
 class HaveScreen(FunctionalProperty):
@@ -105,13 +61,13 @@ class HaveScreenProtection(FunctionalProperty):
 class HaveMemory(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [str]
+    range = [int]
 
 
 class HaveRAM(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [str]
+    range = [int]
 
 
 class HaveOperatingSystem(FunctionalProperty):
@@ -135,12 +91,12 @@ class HaveYearOfIntro(FunctionalProperty):
 class HaveQuickCharge(FunctionalProperty):
     ontology = onto
     domain = [Model]
-    range = [str]
+    range = [bool]
 
 
 my_phone = Smartphone("my phone")
 nokia = Brand("Nokia")
-lumia6= Model("Lumia 600")
+lumia6 = Model("Lumia 600")
 lumia7 = Model("Lumia 700")
 # gsm = GSMStandard("600/900")
 # weight = Weight("600 g")
@@ -157,7 +113,7 @@ nokia.HaveModel.append(lumia7)
 # lumia7.HaveBattery.append(battery)
 
 lumia6.HaveGSMStandard = "600/900"
-lumia6.HaveWeight = "600 g"
+lumia6.HaveWeight = "600"
 lumia6.HaveBattery = "2000 mAh"
 lumia7.HaveGSMStandard = "600/900"
 lumia7.HaveWeight = "600 g"
