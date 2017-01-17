@@ -5,6 +5,35 @@ from json import dump
 
 from pprint import pprint
 
+from owlready import *
+
+onto = Ontology("onto.owl")
+onto_path.append("/home/ania/PycharmProjects/otk/otk_pl/otk_pl")
+
+
+class Smartphone(Thing):
+    ontology = onto
+
+
+class Brand(Smartphone):
+    ontology = onto
+
+
+class Model(Brand):
+    ontology = onto
+
+
+class HasBrandName(Property):
+    ontology = onto
+    domain = [Smartphone]
+    range = [Brand]
+
+
+class HasModel(HasBrandName):
+    ontology = onto
+    domain = [Brand]
+    range = [Model]
+
 
 SITE_URL = 'http://www.mgsm.pl'
 
@@ -25,7 +54,7 @@ for brand in brand_ul.select('li'):
     }
 
 # zbieranie linkow do konkretnych modeli; zapisywane w phones[marka][models]
-for brand in phones.keys():
+for brand in list(phones.keys())[:3]:
     print('Zbieranie informacji o modelach telefonów marki {}...'.format(brand))
 
     # pobieranie calej strony marki
@@ -37,16 +66,25 @@ for brand in phones.keys():
     for phone_li in phone_list_li:
         phone_a = phone_li.select_one('a')
         # zapisywanie modelu telefonu i linku do niego
-        if not phone_a.attrs['href'] == SITE_URL:
+        if not phone_a.attrs['href'] == SITE_URL and not phone_a.text == "PL":
             phones[brand]['models'][phone_a.text] = {
                 'link': SITE_URL + phone_a.attrs['href']
             }
 
 
+            Smartphone(phone_a.attrs['alt']).HasBrandName.append(Brand(brand))
+            Brand(brand).HasModel.append(Model(phone_a.text))
+
+
+onto.save()
+print(onto.instances)
+
+
 # zbieranie danych o konkretnych modelach
-for brand in phones.keys():
+for brand in list(phones.keys())[:3]:
     for model in phones[brand]['models']:
         print('Zbieranie informacji o telefonie {} {}...'.format(brand, model))
+        print(phones[brand]['models'][model]['link'])
 
         model_site = get(phones[brand]['models'][model]['link']).text
         model_site_soup = BeautifulSoup(model_site, 'html.parser')
