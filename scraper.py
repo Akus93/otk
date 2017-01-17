@@ -70,7 +70,16 @@ for brand in phones.keys():
         if not phone_a.attrs['href'] == SITE_URL:
             phones[brand]['models'][phone_a.text] = {
                 'link': SITE_URL + phone_a.attrs['href']
-            }
+            } #phones_a.text - model, brand = brand,
+
+
+            Smartphone(phone_a.attrs['alt']).HasBrandName.append(Brand(brand))
+            Brand(brand).HasModel.append(Model(phone_a.text))
+
+
+onto.save()
+print(onto.instances)
+
 
 # zbieranie danych o konkretnych modelach
 for brand in list(phones.keys())[:3]:
