@@ -1,0 +1,2135 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="otk.owl"
+     xml:base="otk.owl"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:ns="http://isd.ktu.lt/semantika/"
+     xmlns:sct="http://snomed.info/id/"
+     xmlns:otk2="otk.owlotk.owl#"
+     xmlns:Equ="http://www.IndustrialUnit.com/ontologies/Equipment.owl"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:cidoccrm="http://purl.org/NET/cidoc-crm/core#"
+     xmlns:schema="http://schema.org/"
+     xmlns:d0="http://www.ontologydesignpatterns.org/ont/d0.owl#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:otk="otk.owl"
+     xmlns:osnt="http://spatial.ucd.ie/lod/osn/term/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdl="http://sdl.uniroma1.it/ontologies/sapienzadigitalresources.owl#"
+     xmlns:osnp="http://spatial.ucd.ie/lod/osn/property/"
+     xmlns:jdbc="http://d2rq.org/terms/jdbc/"
+     xmlns:soal3="http://www.semanticweb.org/fariss/ontologies/2016/11/soal3#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:onto="onto.owl"
+     xmlns:structure="http://rechenknecht.dyndns.info:6666/HCML/structure#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:wn="http://www.w3.org/2006/03/wn/wn20/instances/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:sh="http://www.w3.org/ns/shacl#"
+     xmlns:ontology="http://www.rki.de/demis/ontology/"
+     xmlns:rov="http://www.w3.org/ns/regorg#"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:pizza="http://www.co-ode.org/ontologies/pizza/pizza.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ormRoot="http://schemas.neumont.edu/ORM/2006-04/ORMRoot"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:wns="http://www.w3.org/2006/03/wn/wn20/schema/"
+     xmlns:osn="http://spatial.ucd.ie/lod/osn/"
+     xmlns:res="http://www.w3.org/2005/sparql-results#"
+     xmlns:orm="http://schemas.neumont.edu/ORM/2006-04/ORMCore"
+     xmlns:wikidata="http://www.wikidata.org/entity/"
+     xmlns:spcdata="http://spcdata.digitpa.gov.it/"
+     xmlns:ormdt="http://schemas.orm.net/ORMDataTypes"
+     xmlns:fhir="http://hl7.org/fhir/"
+     xmlns:d2rq="http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:geonames="http://www.geonames.org/ontology#"
+     xmlns:newest_onto="newest_onto.owl"
+     xmlns:new_onto="new_onto.owl"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:LogiCO="http://ontology.tno.nl/logico#"
+     xmlns:newonto="newonto.owl"
+     xmlns:map="#"
+     xmlns:mfg="http://www.workingontologist.org/Examples/Chapter3/Product.owl#"
+     xmlns:ex="http://example.com/ns#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:a="http://www.example.com/ontology1#"
+     xmlns:locn="http://www.w3.org/ns/locn#"
+     xmlns:cbx="http://cybox.mitre.org/cybox_v1#"
+     xmlns:u="http://amw-project.azarasoft.com/AWM.txt#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/"
+     xmlns:s="http://www.exampless.com/ontology1#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:aiiso="http://purl.org/vocab/aiiso/schema#"
+     xmlns:rel="http://www.pace.edu/rel-syntax-ns#"
+     xmlns:vocab="vocab/"
+     xmlns:wgs84pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oldonto="oldonto.owl">
+    <owl:Ontology rdf:about="otk.owl"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- otk.owlotk.owl#HaveBrand -->
+
+    <owl:ObjectProperty rdf:about="otk.owlotk.owl#HaveBrand">
+        <rdfs:range rdf:resource="otk.owlotk.owl#Brand"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Smartphone"/>
+    </owl:ObjectProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveModel -->
+
+    <owl:ObjectProperty rdf:about="otk.owlotk.owl#HaveModel">
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Brand"/>
+        <rdfs:range rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- otk.owlotk.owl#HaveBattery -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveBattery">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveGSMStandard -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveGSMStandard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveMemory -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveMemory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveOperatingSystem -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveOperatingSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveProcessor -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveProcessor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveQuickCharge -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveQuickCharge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveRAM -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveRAM">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveScreen -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveScreen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveScreenProtection -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveScreenProtection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveWeight -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveWeight">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- otk.owlotk.owl#HaveYearOfIntro -->
+
+    <owl:DatatypeProperty rdf:about="otk.owlotk.owl#HaveYearOfIntro">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="otk.owlotk.owl#Model"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- otk.owlotk.owl#Brand -->
+
+    <owl:Class rdf:about="otk.owlotk.owl#Brand"/>
+
+
+
+    <!-- otk.owlotk.owl#Model -->
+
+    <owl:Class rdf:about="otk.owlotk.owl#Model"/>
+
+
+
+    <!-- otk.owlotk.owl#Smartphone -->
+
+    <owl:Class rdf:about="otk.owlotk.owl#Smartphone"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- otk.owlotk.owl#Bigboy_DG600 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Bigboy_DG600">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w540_x_960_pxÂ (6,00&quot;)Â 184_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572WZegar_procesora:_1,30_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Classic_MM128 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Classic_MM128">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w176_x_220_pxÂ (1,77&quot;)Â 159_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Classic_MM129 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Classic_MM129">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w176_x_220_pxÂ (1,77&quot;)Â 159_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Classic_MM141 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Classic_MM141">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,40&quot;)Â 167_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Classic_MM143_3G -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Classic_MM143_3G">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,40&quot;)Â 167_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Classic_MM330_3G -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Classic_MM330_3G">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (3,20&quot;)Â 125_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Collo3_DG110 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Collo3_DG110">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_800_pxÂ (4,00&quot;)Â 233_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572Zegar_procesora:_1,00_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Collo_2_DG120 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Collo_2_DG120">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT320_x_480_pxÂ (3,50&quot;)Â 165_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572Zegar_procesora:_1,30_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Collo_DG100 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Collo_DG100">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_800_pxÂ (4,00&quot;)Â 233_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572Zegar_procesora:_1,30_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Comfort_MM818 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Comfort_MM818">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,40&quot;)Â 167_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Comfort_MM831_3G -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Comfort_MM831_3G">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,40&quot;)Â 167_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#DG320 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#DG320">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2400</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Dagger_DG550 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Dagger_DG550">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6592Zegar_procesora:_1,70_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-450_MP4_@700_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm,_1,7-2_GHz,_pamiÄ™Ä‡:_32KB,_32KB_L1,_1MB_L2;_LPDDR2_@533_MHz,_LPDDR3_@666_MHz;_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Discovery_DG500 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Discovery_DG500">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2800</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,00&quot;)Â 220_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6589Zegar_procesora:_1,20_GHzLiczba_rdzeni:_4GPU:_PowerVR_SGX544_MP1_@286_MHzczytaj_wiÄ™cejRISC,_32_bit,_ARMv7,_4-rdzeniowy_Cortex-A7,_1,3_GHz,_CMOS_28_nm,_PowerVR_Series5XT_SGX544_@286_MHz,_wyÅ›wietlacz_do_1920x1080,_wideo_1080p_nagrywanie/odtwarzanie,_aparat_do_13_MP,_GPS,_modem_HSPA+,_TD-SCDMA</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Discovery_DG500C -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Discovery_DG500C">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2800</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,00&quot;)Â 220_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Doogee -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Doogee">
+        <rdf:type rdf:resource="otk.owlotk.owl#Brand"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Bigboy_DG600"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Collo3_DG110"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Collo_2_DG120"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Collo_DG100"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#DG320"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Dagger_DG550"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Discovery_DG500"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Discovery_DG500C"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#F3_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#F5"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#F7"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#F7_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Find_DG510"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Galicia_X5"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Hitman_DG850"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Hotwind_DG200"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Ibiza_F2"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Iron_Bone_DG750"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Kissme_DG580"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Latte_DG450"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Leo_DG280"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Max_DG650"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Max_DG650S"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Mint_DG330"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Moon_DG130"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Nova_Y100X"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Pixels_DG350"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Rainbow_DG210"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#S6000"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Shoot_1"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#T3"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#T5"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#T5_Lite"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#T5s"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#T6"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#T6_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Titans2_DG700"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Titans2_DG700_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Titans_DG150"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Turbo2_DG900"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Turbo_DG2014"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Turbo_mini_F1"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Valencia2_Y100"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Valencia2_Y100_Plus"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Valencia2_Y100_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Valencia_DG800"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Voyager2_DG310"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Voyager_DG300"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X3"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X5S"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X5_Max"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X5_Max_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X5_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X6"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X6_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X7"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X7_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X9_Mini"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#X9_Pro"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Y200"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Y300"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Y6"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Y6C"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Y6_Max"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#F3_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#F3_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass</otk2:HaveScreenProtection>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,00&quot;)Â 441_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6753Zegar_procesora:_1,30_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-T720_@450_MHzczytaj_wiÄ™cej64-bit,_8x_ARM_Cortex-53_do_1,5_GHz;_28nm_HPM;_odtwarzanie_wideo_1080p,_30fps;_nagrywanie_wideo:_H.265_i_1080p,_30fps_H.264;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_CDMA2000_1x/EVDO_Rev._A,_EDGE</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#F5 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#F5">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,50&quot;)Â 401_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6753Zegar_procesora:_1,30_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-T720_@450_MHzczytaj_wiÄ™cej64-bit,_8x_ARM_Cortex-53_do_1,5_GHz;_28nm_HPM;_odtwarzanie_wideo_1080p,_30fps;_nagrywanie_wideo:_H.265_i_1080p,_30fps_H.264;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_CDMA2000_1x/EVDO_Rev._A,_EDGE</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#F7 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#F7">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3400</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,50&quot;)Â 401_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_Helio_X20Zegar_procesora:_2,50_GHzLiczba_rdzeni:_10GPU:_ARM_Mali-T880_MP4_@700_MHzczytaj_wiÄ™cej3-klastrowy,_10-rdzeniowy,_do_2,5_GHz;_2x_A72_2,3-2,5_GHz_+_4x_A53_2_GHz_+_4x_A53_1,4_GHz;_2x_LPDDR3_@933_MHz_PoP
+
+aparat_do_25_MP_@30_fps,_(dual_ISP);_PDAF,_VFB,_super_slow_motion,_Native3D_2.0
+odtwarzanie_wideo:_4Kx2K_30_fps_10-bit,_H264,_H265,_VP9_nagrywanie_wideo:_4Kx2K_30_fps,_H265_w/HDR
+wyÅ›wietlacz:_2560x1600_w/_12_HW_blending_layer,_FHD_1920x1080_120_Hz,_MiraVision,_Clear_Motion
+dÅºwiÄ™k:_110_dB_SNR_&amp;_-95_dB_THD
+sieci:_LTE_FDD/TDD_R11_Cat-6_z_20+20_CA,_DC-HSPA+,_TD-SCDMA/EDGE,_CDMA2000_1x/EV-DO_Rev._A
+zintegrowane_interfejsy:_WiFi_802.11ac,_BT,_FM,_GPS,_Glonass,_Beidou,_ANT+</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#F7_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#F7_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,70&quot;)Â 386_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_Helio_X20Zegar_procesora:_2,50_GHzLiczba_rdzeni:_10GPU:_ARM_Mali-T880_MP4_@700_MHzczytaj_wiÄ™cej3-klastrowy,_10-rdzeniowy,_do_2,5_GHz;_2x_A72_2,3-2,5_GHz_+_4x_A53_2_GHz_+_4x_A53_1,4_GHz;_2x_LPDDR3_@933_MHz_PoP
+
+aparat_do_25_MP_@30_fps,_(dual_ISP);_PDAF,_VFB,_super_slow_motion,_Native3D_2.0
+odtwarzanie_wideo:_4Kx2K_30_fps_10-bit,_H264,_H265,_VP9_nagrywanie_wideo:_4Kx2K_30_fps,_H265_w/HDR
+wyÅ›wietlacz:_2560x1600_w/_12_HW_blending_layer,_FHD_1920x1080_120_Hz,_MiraVision,_Clear_Motion
+dÅºwiÄ™k:_110_dB_SNR_&amp;_-95_dB_THD
+sieci:_LTE_FDD/TDD_R11_Cat-6_z_20+20_CA,_DC-HSPA+,_TD-SCDMA/EDGE,_CDMA2000_1x/EV-DO_Rev._A
+zintegrowane_interfejsy:_WiFi_802.11ac,_BT,_FM,_GPS,_Glonass,_Beidou,_ANT+</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Find_DG510 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Find_DG510">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6589Zegar_procesora:_1,20_GHzLiczba_rdzeni:_4GPU:_PowerVR_SGX544_MP1_@286_MHzczytaj_wiÄ™cejRISC,_32_bit,_ARMv7,_4-rdzeniowy_Cortex-A7,_1,3_GHz,_CMOS_28_nm,_PowerVR_Series5XT_SGX544_@286_MHz,_wyÅ›wietlacz_do_1920x1080,_wideo_1080p_nagrywanie/odtwarzanie,_aparat_do_13_MP,_GPS,_modem_HSPA+,_TD-SCDMA</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Galicia_X5 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Galicia_X5">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2400</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass</otk2:HaveScreenProtection>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Zegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Hitman_DG850 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Hitman_DG850">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Hotwind_DG200 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Hotwind_DG200">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,70&quot;)Â 208_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6577Zegar_procesora:_1,20_GHzLiczba_rdzeni:_2GPU:_PowerVR_SGX531_@522_MHzczytaj_wiÄ™cejRISC,_32_bit,_ARMv7,_2-rdzeniowy_ARM_Cortex-A9,_1_GHz,_PowerVR_SGX531T_(Series5),_wyÅ›wietlacz_do_1280x720_pikseli,_obsÅ‚uga_dual-SIM,_modem_HSPA</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Ibiza_F2 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Ibiza_F2">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,00&quot;)Â 220_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6732Zegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T760czytaj_wiÄ™cej64-bit_quad-core_(1,5_GHz)_ARM_Cortex-A53;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13MP_ISP;_odtwarzanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Iron_Bone_DG750 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Iron_Bone_DG750">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4.2_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (4,70&quot;)Â 234_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6592Zegar_procesora:_1,70_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-450_MP4_@700_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm,_1,7-2_GHz,_pamiÄ™Ä‡:_32KB,_32KB_L1,_1MB_L2;_LPDDR2_@533_MHz,_LPDDR3_@666_MHz;_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Kissme_DG580 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Kissme_DG580">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,50&quot;)Â 200_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Latte_DG450 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Latte_DG450">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2300</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Leo_DG280 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Leo_DG280">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zegar_procesora:_1,30_GHz</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Lumia_600 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Lumia_600">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</otk2:HaveWeight>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600/900</otk2:HaveGSMStandard>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Lumia_700 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Lumia_700">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000</otk2:HaveBattery>
+        <otk2:HaveWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600</otk2:HaveWeight>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">600/900</otk2:HaveGSMStandard>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM105 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM105">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³wÂ (1,80&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM129 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM129">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w176_x_220_pxÂ (1,77&quot;)Â 159_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM131 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM131">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³wÂ (1,80&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM132 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM132">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³wÂ (1,80&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM133 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM133">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³wÂ (1,80&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM136 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM136">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,40&quot;)Â 167_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM235 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM235">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,80&quot;)Â 143_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM320 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM320">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³w240_x_320_pxÂ (3,20&quot;)Â 125_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM355 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM355">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">950</otk2:HaveBattery>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono_/_STN128_x_64_pxÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM400BB -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM400BB">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono_/_STN128_x_64_pxÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM428 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM428">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³w128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM430BB -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM430BB">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono_/_STN128_x_64_pxÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM431 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM431">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono_/_TFT128_x_64_pxÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM432 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM432">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³w128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM450 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM450">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono_/_STN128_x_64_pxÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM461 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM461">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM462 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM462">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM500BB -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM500BB">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">950</otk2:HaveBattery>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mono_/_STNÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM560 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM560">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM570 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM570">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_64_pxÂ (0,00&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM705 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM705">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM710 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM710">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM715 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM715">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM810 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM810">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³w176_x_220_pxÂ (2,20&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM819 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM819">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT176_x_220_pxÂ (2,00&quot;)Â 141_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM821 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM821">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFTÂ (2,00&quot;)</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM823 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM823">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT176_x_220_pxÂ (2,40&quot;)Â 117_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM850 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM850">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFTÂ (2,40&quot;)</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM901_Neptun -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM901_Neptun">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w128_x_160_pxÂ (1,80&quot;)Â 114_ppi</otk2:HaveScreen>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MM910_Strong -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MM910_Strong">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w176_x_220_pxÂ (2,00&quot;)Â 141_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MS450 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MS450">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1650</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4.2_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zegar_procesora:_1,20_GHz</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MS505 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MS505">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4.2_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (5,00&quot;)Â 196_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582MZegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@416_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MS551 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MS551">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,50&quot;)Â 200_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582MLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@416_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MS552 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MS552">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,50&quot;)Â 200_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spreadtrum_SC7731Liczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@400czytaj_wiÄ™cej4x_ARM_Cortex_A7_do_1,2_GHz;_pamiÄ™Ä‡_32_KB_L1,_32_KB_L1,_512KB_L2,_NAND,_USB,_UART,_eMMC</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#MaxCom -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#MaxCom">
+        <rdf:type rdf:resource="otk.owlotk.owl#Brand"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Classic_MM128"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Classic_MM129"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Classic_MM141"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Classic_MM143_3G"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Classic_MM330_3G"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Comfort_MM818"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Comfort_MM831_3G"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM105"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM129"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM131"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM132"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM133"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM136"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM235"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM320"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM355"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM400BB"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM428"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM430BB"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM431"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM432"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM450"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM461"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM462"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM500BB"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM560"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM570"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM705"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM710"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM715"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM810"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM819"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM821"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM823"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM850"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM901_Neptun"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MM910_Strong"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MS450"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MS505"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MS551"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#MS552"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Maxcom_Strong_MM920"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Smart_MS453"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Smart_MS514"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Strong_MM899"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Strong_MM911"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Strong_MM916"/>
+        <otk2:HaveModel rdf:resource="otk.owlotk.owl#Smart&amp;Strong;_MS456"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Max_DG650 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Max_DG650">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (6,50&quot;)Â 339_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6589TZegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_PowerVR_SGX544_MP1_@357_MHzczytaj_wiÄ™cejRISC,_32_bit,_ARMv7,_4-rdzeniowy_Cortex-A7,_1,5_GHz,_CMOS_28_nm,_PowerVR_Series5XT_SGX544_@357_MHz,_wyÅ›wietlacz_do_1920x1080,_wideo_1080p_nagrywanie/odtwarzanie,_aparat_do_13_MP,_GPS,_modem_HSPA+,_TD-SCDMA</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Max_DG650S -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Max_DG650S">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.3_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (6,50&quot;)Â 339_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6592Zegar_procesora:_1,70_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-450_MP4_@700_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm,_1,7-2_GHz,_pamiÄ™Ä‡:_32KB,_32KB_L1,_1MB_L2;_LPDDR2_@533_MHz,_LPDDR3_@666_MHz;_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Maxcom_Strong_MM920 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Maxcom_Strong_MM920">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">900_1800</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT256k_kolorÃ³w240_x_320_pxÂ (2,80&quot;)Â 143_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Mint_DG330 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Mint_DG330">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT16M_kolorÃ³w480_x_854_pxÂ (5,00&quot;)Â 196_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Moon_DG130 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Moon_DG130">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1250</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_800_pxÂ (4,30&quot;)Â 217_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572WZegar_procesora:_1,30_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Nokia -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Nokia">
+        <rdf:type rdf:resource="otk.owlotk.owl#Brand"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Nova_Y100X -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Nova_Y100X">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.0_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass_3</otk2:HaveScreenProtection>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Pixels_DG350 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Pixels_DG350">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (4,70&quot;)Â 312_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Rainbow_DG210 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Rainbow_DG210">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1600</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572Zegar_procesora:_1,30_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#S6000 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#S6000">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass</otk2:HaveScreenProtection>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Zegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Shoot_1 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Shoot_1">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3300</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,50&quot;)Â 401_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6737TZegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej4x_ARM_Cortex-A53_do_1,5_GHz;_pamiÄ™Ä‡:_1x_LPDDR2/3_733_MHz_do_3_GB;__eMMC_5.0;_aparat_do_13_MP_30_fps_z_Dual_ISP;_wideo:_1080p_30_fps_H.264/H.265_decoding_&amp;_1080p_H264_encoding;_wyÅ›wietlacz_do_Full_HD_1080p_1920x1080_60_fps;_modem:_LTE_FDD/TDD_R9_Cat4_CDMA2000,_SVLTE,_DSDS_L+G/C2K,_TSTS;_Wi-Fi_802.11_abgn,_BT,_FM,_GPS,_Glonass,_Beidou</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Smart_MS453 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Smart_MS453">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1700</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Liczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Smart_MS514 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Smart_MS514">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6737Zegar_procesora:_1,25_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@650_MHzczytaj_wiÄ™cej4x_ARM_Cortex-A53_do_1,1-1,3_GHz;_pamiÄ™Ä‡:_1x_LPDDR2/3_640_MHz_do_3_GB;_eMMC_5.0;_aparat_do_13_MP_28fps_z_ZSD;_obsÅ‚uga_wideo:__1080p_30fps_H.264/H.265_decoding_&amp;_720p_MPEG4_encoding;_wyÅ›wietlacz:_qHD_960x540_/_720p_1280x720;_modem:_LTE_FDD/TDD_R9_Cat4_CDMA2000,_SVLTE,_DSDS_L+G/C2K,_TSTS;_Wi-Fi_802.11_abgn,_BT,_FM,_GPS,_Glonass,_Beidou</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Strong_MM899 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Strong_MM899">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT176_x_220_pxÂ (2,40&quot;)Â 117_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Strong_MM911 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Strong_MM911">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT64k_kolorÃ³w176_x_220_pxÂ (2,00&quot;)Â 141_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Strong_MM916 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Strong_MM916">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1400</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_TFT240_x_320_pxÂ (2,40&quot;)Â 167_ppi</otk2:HaveScreen>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#T3 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#T3">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (4,70&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6753Liczba_rdzeni:_8GPU:_ARM_Mali-T720_@450_MHzczytaj_wiÄ™cej64-bit,_8x_ARM_Cortex-53_do_1,5_GHz;_28nm_HPM;_odtwarzanie_wideo_1080p,_30fps;_nagrywanie_wideo:_H.265_i_1080p,_30fps_H.264;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_CDMA2000_1x/EVDO_Rev._A,_EDGE</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#T5 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#T5">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6753Zegar_procesora:_1,50_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-T720_@450_MHzczytaj_wiÄ™cej64-bit,_8x_ARM_Cortex-53_do_1,5_GHz;_28nm_HPM;_odtwarzanie_wideo_1080p,_30fps;_nagrywanie_wideo:_H.265_i_1080p,_30fps_H.264;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_CDMA2000_1x/EVDO_Rev._A,_EDGE</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#T5_Lite -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#T5_Lite">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6753Zegar_procesora:_1,50_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-T720_@450_MHzczytaj_wiÄ™cej64-bit,_8x_ARM_Cortex-53_do_1,5_GHz;_28nm_HPM;_odtwarzanie_wideo_1080p,_30fps;_nagrywanie_wideo:_H.265_i_1080p,_30fps_H.264;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_CDMA2000_1x/EVDO_Rev._A,_EDGE</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#T5s -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#T5s">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735VZegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@450_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_(1,5_GHz);_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD,_wyÅ›wietlacze_do_1080p.</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#T6 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#T6">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6250</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735PZegar_procesora:_1,00_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_@400_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_(1_GHz);_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#T6_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#T6_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6250</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6753Liczba_rdzeni:_8GPU:_ARM_Mali-T720_@450_MHzczytaj_wiÄ™cej64-bit,_8x_ARM_Cortex-53_do_1,5_GHz;_28nm_HPM;_odtwarzanie_wideo_1080p,_30fps;_nagrywanie_wideo:_H.265_i_1080p,_30fps_H.264;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_CDMA2000_1x/EVDO_Rev._A,_EDGE</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Titans2_DG700 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Titans2_DG700">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4.2_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (4,50&quot;)Â 245_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Titans2_DG700_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Titans2_DG700_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.0_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,00&quot;)Â 441_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6795Liczba_rdzeni:_8GPU:_PowerVR_G6200_@700_MHzczytaj_wiÄ™cej64-bit;_do_2,2_GHz;_odtwarzanie_wideo_2K_2560x1600_pikseli;_2-kanaÅ‚owa_pamiÄ™Ä‡_LPDDR3_@933_MHz;_obsÅ‚uga__Rel._9,_Cat._4_FDD_i_TDD_LTE_150_Mb/s_-_50_Mb/s;_Wi-Fi_802.11ac,_BT,_FM,_GPS,_Glonass,_Beidou,_ANT+</otk2:HaveProcessor>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Titans_DG150 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Titans_DG150">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1500</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT256k_kolorÃ³w320_x_480_pxÂ (3,50&quot;)Â 165_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572WZegar_procesora:_1,20_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Turbo2_DG900 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Turbo2_DG900">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass_3</otk2:HaveScreenProtection>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w1080_x_1920_pxÂ (5,00&quot;)Â 441_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6592Zegar_procesora:_1,70_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-450_MP4_@700_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm,_1,7-2_GHz,_pamiÄ™Ä‡:_32KB,_32KB_L1,_1MB_L2;_LPDDR2_@533_MHz,_LPDDR3_@666_MHz;_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Turbo_DG2014 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Turbo_DG2014">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1750</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Turbo_mini_F1 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Turbo_mini_F1">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy16M_kolorÃ³w540_x_960_pxÂ (4,50&quot;)Â 245_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6732Zegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T760czytaj_wiÄ™cej64-bit_quad-core_(1,5_GHz)_ARM_Cortex-A53;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13MP_ISP;_odtwarzanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Valencia2_Y100 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Valencia2_Y100">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass_3</otk2:HaveScreenProtection>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6592Zegar_procesora:_1,70_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-450_MP4_@700_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm,_1,7-2_GHz,_pamiÄ™Ä‡:_32KB,_32KB_L1,_1MB_L2;_LPDDR2_@533_MHz,_LPDDR3_@666_MHz;_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Valencia2_Y100_Plus -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Valencia2_Y100_Plus">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass</otk2:HaveScreenProtection>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Zegar_procesora:_1,00_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Valencia2_Y100_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Valencia2_Y100_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass</otk2:HaveScreenProtection>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Zegar_procesora:_1,00_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Valencia_DG800 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Valencia_DG800">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4.2_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (4,50&quot;)Â 245_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Voyager2_DG310 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Voyager2_DG310">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.4_KitKat</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (5,00&quot;)Â 196_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6582Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-400_MP2_@500_MHzczytaj_wiÄ™cejARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Voyager_DG300 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Voyager_DG300">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">512</otk2:HaveRAM>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_4.2.2_Jelly_Bean</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w540_x_960_pxÂ (5,00&quot;)Â 220_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6572Zegar_procesora:_1,30_GHzLiczba_rdzeni:_2GPU:_ARM_Mali-400_MP1_@500_MHzczytaj_wiÄ™cejCortex_A7,_28_nm,_1,2_GHz;_pamiÄ™Ä‡:_32KB,_32KB_L1,_256KB_L2;_LPDDR2_266_MHz,_HSPA+/TD-SCDMA,_WCDMA,_GSM_Wi-Fi,_odbiornik_FM,_Bluetooth,_wbudowany_GPS</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X3 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X3">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1800</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X5S -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X5S">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Zegar_procesora:_1,00_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X5_Max -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X5_Max">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X5_Max_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X5_Max_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6737Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@650_MHzczytaj_wiÄ™cej4x_ARM_Cortex-A53_do_1,1-1,3_GHz;_pamiÄ™Ä‡:_1x_LPDDR2/3_640_MHz_do_3_GB;_eMMC_5.0;_aparat_do_13_MP_28fps_z_ZSD;_obsÅ‚uga_wideo:__1080p_30fps_H.264/H.265_decoding_&amp;_720p_MPEG4_encoding;_wyÅ›wietlacz:_qHD_960x540_/_720p_1280x720;_modem:_LTE_FDD/TDD_R9_Cat4_CDMA2000,_SVLTE,_DSDS_L+G/C2K,_TSTS;_Wi-Fi_802.11_abgn,_BT,_FM,_GPS,_Glonass,_Beidou</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X5_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X5_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2400</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveScreenProtection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corning_Gorilla_Glass</otk2:HaveScreenProtection>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735PZegar_procesora:_1,00_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_@400_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_(1_GHz);_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X6 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X6">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Zegar_procesora:_1,50_GHzLiczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X6_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X6_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Liczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X7 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X7">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3700</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (6,00&quot;)Â 245_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Liczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X7_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X7_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3700</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (6,00&quot;)Â 245_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6737Liczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@650_MHzczytaj_wiÄ™cej4x_ARM_Cortex-A53_do_1,1-1,3_GHz;_pamiÄ™Ä‡:_1x_LPDDR2/3_640_MHz_do_3_GB;_eMMC_5.0;_aparat_do_13_MP_28fps_z_ZSD;_obsÅ‚uga_wideo:__1080p_30fps_H.264/H.265_decoding_&amp;_720p_MPEG4_encoding;_wyÅ›wietlacz:_qHD_960x540_/_720p_1280x720;_modem:_LTE_FDD/TDD_R9_Cat4_CDMA2000,_SVLTE,_DSDS_L+G/C2K,_TSTS;_Wi-Fi_802.11_abgn,_BT,_FM,_GPS,_Glonass,_Beidou</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X9_Mini -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X9_Mini">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6580Liczba_rdzeni:_4GPU:_ARM_Maliczytaj_wiÄ™cej4x_ARM_Cortex_A7,_28_nm;_1,3_GHz;_pamiÄ™Ä‡_32KB,_32KB_L1,_512KB_L2_LPDDR2/LPDDR3_@533_MHz,_HSPA+/TD-SCDMA,_Wi-Fi,_odbiornik_FM,_Bluetooth_4.0,_NFC,_wbudowany_GPS,_GSM,_GPRS,_UMTS_Rel._8,_HSPA+_42.2_Mbps,_HSUPA_5.76_Mbps,_TD-SCDMA_2.8_Mbps</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#X9_Pro -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#X9_Pro">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6737Zegar_procesora:_1,40_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@650_MHzczytaj_wiÄ™cej4x_ARM_Cortex-A53_do_1,1-1,3_GHz;_pamiÄ™Ä‡:_1x_LPDDR2/3_640_MHz_do_3_GB;_eMMC_5.0;_aparat_do_13_MP_28fps_z_ZSD;_obsÅ‚uga_wideo:__1080p_30fps_H.264/H.265_decoding_&amp;_720p_MPEG4_encoding;_wyÅ›wietlacz:_qHD_960x540_/_720p_1280x720;_modem:_LTE_FDD/TDD_R9_Cat4_CDMA2000,_SVLTE,_DSDS_L+G/C2K,_TSTS;_Wi-Fi_802.11_abgn,_BT,_FM,_GPS,_Glonass,_Beidou</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Y200 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Y200">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">III_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Zegar_procesora:_1,00_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Y300 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Y300">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2200</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2015</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,00&quot;)Â 294_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Liczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Y6 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Y6">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6750Zegar_procesora:_1,50_GHzLiczba_rdzeni:_8GPU:_ARM_Mali-T860_MP2_@350_MHzczytaj_wiÄ™cej4x_Cortex-A53_@_1_GHz_+_4x_Cortex-A53_@_1,5_GHz;_32KB/32KB_L1,_515_KB_L2;_1x_LPDDR3_@666_MHz_eMCP,_do_4_GB_eMMC_5.1;_aparat_do_16_MP,_30_fps,_wideo_dekoding_do_1080p_30_fps_H.264,_H.265,_wyÅ›wietlacz_do_720p,_LTE_FDD/TDD_Cat.6</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Y6C -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Y6C">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</otk2:HaveMemory>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w720_x_1280_pxÂ (5,50&quot;)Â 267_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6737Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@650_MHzczytaj_wiÄ™cej4x_ARM_Cortex-A53_do_1,1-1,3_GHz;_pamiÄ™Ä‡:_1x_LPDDR2/3_640_MHz_do_3_GB;_eMMC_5.0;_aparat_do_13_MP_28fps_z_ZSD;_obsÅ‚uga_wideo:__1080p_30fps_H.264/H.265_decoding_&amp;_720p_MPEG4_encoding;_wyÅ›wietlacz:_qHD_960x540_/_720p_1280x720;_modem:_LTE_FDD/TDD_R9_Cat4_CDMA2000,_SVLTE,_DSDS_L+G/C2K,_TSTS;_Wi-Fi_802.11_abgn,_BT,_FM,_GPS,_Glonass,_Beidou</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Y6_Max -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Y6_Max">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</otk2:HaveRAM>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</otk2:HaveMemory>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4300</otk2:HaveBattery>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_6.0_Marshmallow</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IV_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFTÂ (6,50&quot;)</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6750Liczba_rdzeni:_8GPU:_ARM_Mali-T860_MP2_@350_MHzczytaj_wiÄ™cej4x_Cortex-A53_@_1_GHz_+_4x_Cortex-A53_@_1,5_GHz;_32KB/32KB_L1,_515_KB_L2;_1x_LPDDR3_@666_MHz_eMCP,_do_4_GB_eMMC_5.1;_aparat_do_16_MP,_30_fps,_wideo_dekoding_do_1080p_30_fps_H.264,_H.265,_wyÅ›wietlacz_do_720p,_LTE_FDD/TDD_Cat.6</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#my_phone -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#my_phone">
+        <rdf:type rdf:resource="otk.owlotk.owl#Smartphone"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#phone -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#phone">
+        <rdf:type rdf:resource="otk.owlotk.owl#Smartphone"/>
+        <otk2:HaveBrand rdf:resource="otk.owlotk.owl#Doogee"/>
+        <otk2:HaveBrand rdf:resource="otk.owlotk.owl#MaxCom"/>
+    </owl:NamedIndividual>
+
+
+
+    <!-- otk.owlotk.owl#Smart&amp;Strong;_MS456 -->
+
+    <owl:NamedIndividual rdf:about="otk.owlotk.owl#Smart&amp;Strong;_MS456">
+        <rdf:type rdf:resource="otk.owlotk.owl#Model"/>
+        <otk2:HaveRAM rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</otk2:HaveRAM>
+        <otk2:HaveBattery rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2600</otk2:HaveBattery>
+        <otk2:HaveMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</otk2:HaveMemory>
+        <otk2:HaveGSMStandard rdf:datatype="http://www.w3.org/2001/XMLSchema#string">850_900_1800_1900</otk2:HaveGSMStandard>
+        <otk2:HaveOperatingSystem rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android_5.1_Lollipop</otk2:HaveOperatingSystem>
+        <otk2:HaveYearOfIntro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">II_kwartaÅ‚_2016</otk2:HaveYearOfIntro>
+        <otk2:HaveScreen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kolorowy_/_IPS_TFT16M_kolorÃ³w480_x_854_pxÂ (4,50&quot;)Â 218_ppi</otk2:HaveScreen>
+        <otk2:HaveProcessor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MediaTek_MT6735Zegar_procesora:_1,30_GHzLiczba_rdzeni:_4GPU:_ARM_Mali-T720_MP2_@600_MHzczytaj_wiÄ™cej64-bit_4x_ARM_Cortex-A53_do_1,3_GHz;_Rel._9,_Cat._4_LTE_(FDD_&amp;_TDD),_DC-HSPA+,_TD-SCDMA,_EDGE;_Dual-band_802.11n,_Bluetooth_4.0
+13_MP_ISP;_odtwarzanie/nagrywanie_wideo_H.265_Ultra_HD</otk2:HaveProcessor>
+        <otk2:HaveQuickCharge rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</otk2:HaveQuickCharge>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net -->

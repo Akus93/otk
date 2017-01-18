@@ -16,11 +16,12 @@ def generate_query(namespace, params):
     return query
 
 #  http://mowl-power.cs.man.ac.uk:8080/converter/convert
+#  http://owl.cs.manchester.ac.uk/tools/webapps/owl-syntax-converter/
 if __name__ == '__main__':
     g = Graph()
-    g.parse('data/ontology.rdf')
+    g.parse('data/otk.rdf')
 
-    otk = Namespace("file:///home/akus/Projekty/zti/otk/data/newest_onto.owlnewest_onto.owl#")
+    otk = Namespace("file:///home/akus/Projekty/zti/otk/data/otk.owlotk.owl#")
 
     # for x in g:
     #     print(x)
@@ -30,10 +31,10 @@ if __name__ == '__main__':
 
     # qres = g.query('SELECT ?batery WHERE { <file:///home/akus/Projekty/zti/otk/data/new_onto.owlnew_onto.owl#Lumia_600> <file:///home/akus/Projekty/zti/otk/data/new_onto.owlnew_onto.owl#HaveBattery> ?batery }')
 
-    qres = g.query('SELECT ?phone WHERE {'
-                   ' ?phone <file:///home/akus/Projekty/zti/otk/data/new_onto.owlnew_onto.owl#HaveBattery> "5000"^^<http://www.w3.org/2001/XMLSchema#string>. '
-                   ' ?phone <file:///home/akus/Projekty/zti/otk/data/new_onto.owlnew_onto.owl#HaveWeight> "1000"^^<http://www.w3.org/2001/XMLSchema#string>'
-                   '}')
+    qres = g.query("SELECT ?phone WHERE { ?phone <file:///home/akus/Projekty/zti/otk/data/otk.owlotk.owl#HaveOperatingSystem> 'Android_6.0_Marshmallow'^^<http://www.w3.org/2001/XMLSchema#string>. "
+                   "?phone <file:///home/akus/Projekty/zti/otk/data/otk.owlotk.owl#HaveQuickCharge> 'true'^^<http://www.w3.org/2001/XMLSchema#boolean>"
+                   "}")
+
     for row in qres:
         print("ROW: {}".format(row))
 
