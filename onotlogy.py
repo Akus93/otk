@@ -1,7 +1,7 @@
 from owlready import *
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-onto = Ontology("onto.owl")
+onto = Ontology("oldonto.owl")
 onto_path.append("/home/akus/Projekty/zti/otk/data")
 
 
