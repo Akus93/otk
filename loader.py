@@ -77,18 +77,31 @@ for brand in data.keys():
         print(data[brand]['models'][model]['Szybkie ładowanie'])
         onto_model.HaveQuickCharge = data[brand]['models'][model]['Szybkie ładowanie']
         print(data[brand]['models'][model]['Ekran dotykowy'])
+        onto_model.HaveTouchScreen = data[brand]['models'][model]['Ekran dotykowy']
         print(data[brand]['models'][model]['Akcelerometr'])
+        onto_model.HaveAccelerometer = data[brand]['models'][model]['Akcelerometr']
         print(data[brand]['models'][model]['Zbliżeniowy'])
+        onto_model.HaveProximitySensor = data[brand]['models'][model]['Zbliżeniowy']
         print(data[brand]['models'][model]['Światła'])
-        print( data[brand]['models'][model]['Magnetometr'])
+        onto_model.HaveLightSensor = data[brand]['models'][model]['Światła']
+        print(data[brand]['models'][model]['Magnetometr'])
+        onto_model.Magnetometer = data[brand]['models'][model]['Magnetometr']
         print(data[brand]['models'][model]['Żyroskop'])
+        onto_model.HaveGyroscope = data[brand]['models'][model]['Żyroskop']
         print(data[brand]['models'][model]['Barometr'])
+        onto_model.HaveBarometer = data[brand]['models'][model]['Barometr']
         print(data[brand]['models'][model]['Wysokościomierz'])
+        onto_model.HaveAltimeter = data[brand]['models'][model]['Wysokościomierz']
         print(data[brand]['models'][model]['Grawitacyjny'])
+        onto_model.HaveGravitySensor = data[brand]['models'][model]['Grawitacyjny']
         print(data[brand]['models'][model]['Skaner tęczówki'])
+        onto_model.HaveIrisScanner = data[brand]['models'][model]['Skaner tęczówki']
         print(data[brand]['models'][model]['Czytnik linii papilarnych'])
+        onto_model.HaveFingerprintScanner = data[brand]['models'][model]['Czytnik linii papilarnych']
         print(data[brand]['models'][model]['Termometr'])
+        onto_model.HaveThermometer = data[brand]['models'][model]['Termometr']
         print(data[brand]['models'][model]['Higrometr'])
+        onto_model.HaveHygrometer = data[brand]['models'][model]['Higrometr']
 
 
 onto.onto.save()
