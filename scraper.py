@@ -55,11 +55,9 @@ for brand in phones.keys():
 
 
 # zbieranie danych o konkretnych modelach
-# for brand in list(phones.keys())[:1]:
 for brand in list(phones.keys()):
     for model in phones[brand]['models']:
         print('Zbieranie informacji o telefonie {} {}...'.format(brand, model))
-        # sleep(0.5)
 
         model_site = get(phones[brand]['models'][model]['link']).text
         model_site_soup = BeautifulSoup(model_site, 'html.parser')
@@ -100,7 +98,6 @@ for brand, model in to_remove:
 
 for brand in phones.keys():
     for model in phones[brand]['models']:
-        # try:
         # oczyszczanie inforacji o baterii z 'Kup Power Bank'
         batery_info = phones[brand]['models'][model]['Standardowa bateria']
         try:
@@ -145,11 +142,6 @@ for brand in phones.keys():
             phones[brand]['models'][model]['Pamięć wbudowana'] = int(mem.split(' ')[0])
         except ValueError:
             phones[brand]['models'][model]['Pamięć wbudowana'] = None
-        #
-        # except KeyError:
-        #     pass  # TODO usunac try gdy bedzie brak ograniczenia scrapowania modeli
-
-# pprint(phones)
 
 # zliczanie o ilu telefonach pobrano dane
 phones_count = 0
@@ -167,15 +159,9 @@ create_date = set()
 display_protection = set()
 for brand in phones.keys():
     for model in phones[brand]['models']:
-        # try:
         operating_systems.add(phones[brand]['models'][model]['System operacyjny'])
-        # except KeyError:
-        #     pass  # TODO usunac try gdy bedzie brak ograniczenia scrapowania modeli
-        # try:
         create_date.add(phones[brand]['models'][model]['Wprowadzony na rynek'])
         display_protection.add(phones[brand]['models'][model]['Ochrona wyświetlacza'])
-        # except KeyError:
-        #     pass
 
 print('Systemy operacyjne: {}'.format(operating_systems))
 print('Wprowadzony na rynek: {}'.format(create_date))
