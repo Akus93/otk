@@ -1,0 +1,23 @@
+.footer-content {
+  margin-top: 1.5em;
+}
+
+.footer-container {
+  height: 100%;
+}
+
+.author-info {
+  color: antiquewhite;
+  float: right !important;
+}
+
+a {
+  color: antiquewhite;
+}
+
+.result-box {
+  border-left: solid 1px #eee;
+  max-height: 70vh;
+  white-space: normal;
+  overflow: auto;
+}

@@ -1,0 +1,106 @@
+<md-toolbar color="primary">
+  <div class="container">
+    <span>Ontologia dla telefonów komórkowych</span>
+    <!--<span class="example-spacer"></span>-->
+    <!--<md-icon class="example-icon">favorite</md-icon>-->
+    <!--<md-icon class="example-icon">delete</md-icon>-->
+  </div>
+
+</md-toolbar>
+
+<main class="container">
+
+  <h3>Wyszukaj telefon według specyfikacji:</h3>
+
+  <div class="row">
+    <div class="col-md-3">
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveQuickCharge">Szybkie ładowanie</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveTouchScreen">Ekran dotykowy</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveAccelerometer">Akcelerometr</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveProximitySensor">Czujnik zbliżeniowy</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveLightSensor">Czujnik światła</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.Magnetometer">Magnetometr</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveGyroscope">Żyroskop</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveBarometer">Barometr</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveAltimeter">Wysokościomierz</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveGravitySensor">Sensor grawitacyjny</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveIrisScanner">Skaner tęczówki</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveFingerprintScanner">Czytnik linii papilarnych</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveThermometer">Termometr</md-checkbox>
+      </section>
+      <section>
+        <md-checkbox [(ngModel)]="specification.HaveHygrometer">Higrometr</md-checkbox>
+      </section>
+
+      <br>
+      <button md-raised-button (click)="search()">Wyszukaj</button>
+
+    </div>
+
+    <div class="col-md-3">
+      <md-input-container>
+        <input md-input [(ngModel)]="specification.HaveRAM" [ngModelOptions]="{standalone: true}"  type="number" placeholder="Pamięć RAM">
+      </md-input-container>
+      <md-input-container>
+        <input md-input [(ngModel)]="specification.HaveMemory" [ngModelOptions]="{standalone: true}"  type="number" placeholder="Pamięć wbudowana">
+      </md-input-container>
+      <md-input-container>
+        <input md-input [(ngModel)]="specification.HaveBattery" [ngModelOptions]="{standalone: true}"  type="number" placeholder="Bateria">
+      </md-input-container>
+      <md-input-container>
+        <input md-input [(ngModel)]="specification.HaveWeight" [ngModelOptions]="{standalone: true}"  type="number" placeholder="Waga">
+      </md-input-container>
+    </div>
+
+    <div class="col-md-6">
+      <div class="result-box">
+        <div *ngIf="loading">
+          <md-progress-bar mode="indeterminate"></md-progress-bar>
+        </div>
+        <div *ngFor="let phone of result">
+          {{phone}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</main>
+
+<footer>
+  <div class="container footer-container">
+    <div class="footer-content">
+      <div class="author-info">
+        Created by Dawid Rdzanek and Anna Kuszyńska
+      </div>
+    </div>
+  </div>
+
+</footer>
