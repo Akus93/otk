@@ -1,4 +1,5 @@
 from rdflib import Graph
+import os
 
 
 def generate_query(namespace, params):
@@ -21,7 +22,8 @@ def search_phones(params):
     graph = Graph()
     graph.parse('../data/otk.rdf')
 
-    namespace = "file:///home/akus/Projekty/zti/otk/server/data/otk.owlotk.owl#"
+    path = '/'.join(os.path.realpath(__file__).split('/')[:-1]) + '/../data'
+    namespace = "file://" + path + "/otk.owlotk.owl#"
     string = '<http://www.w3.org/2001/XMLSchema#string>'
     boolean = '<http://www.w3.org/2001/XMLSchema#boolean>'
     integer = '<http://www.w3.org/2001/XMLSchema#integer>'
@@ -63,18 +65,3 @@ def search_phones(params):
     query_result = graph.query(query)
     return query_result
 
-
-if __name__ == '__main__':
-    g = Graph()
-    g.parse('../data/otk.rdf')
-
-    for x in g:
-        print(x)
-
-    # qres = g.query("SELECT ?phone WHERE { ?phone <file:///home/akus/Projekty/zti/otk/data/otk.owlotk.owl#HaveOperatingSystem> 'Android_6.0_Marshmallow'^^<http://www.w3.org/2001/XMLSchema#string>. "
-    #                "?phone <file:///home/akus/Projekty/zti/otk/data/otk.owlotk.owl#HaveRAM> '2'^^<http://www.w3.org/2001/XMLSchema#integer>."
-    #                "}")
-    qres = g.query("SELECT ?phone WHERE { ?phone <file:///home/akus/Projekty/zti/otk/data/otk.owlotk.owl#HaveQuickCharge> 'true'^^<http://www.w3.org/2001/XMLSchema#boolean>. }")
-    for row in qres:
-        print("ROW: {}".format(row))
-    print(len(qres))
